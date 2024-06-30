@@ -1,5 +1,5 @@
 # Replace this with your own github.com/<username>/<repository>
-GO_MODULE := github.com/Ilhamkawe/protobuf-grpc
+GO_MODULE := github.com/Ilhamkawe/Go-Bank-Protobuf
 
 .PHONY: clean
 clean:
