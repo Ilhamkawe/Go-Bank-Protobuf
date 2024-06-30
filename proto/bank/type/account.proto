@@ -1,0 +1,14 @@
+syntax = "proto3";
+package bank;
+
+option go_package = "github.com/Ilhamkawe/Go-Bank-Protobuf/protogen/go/bank";
+import "proto/google/type/date.proto";
+
+message CurrentBalanceRequest {
+  string account_number = 1;
+}
+
+message CurrentBalanceResponnse {
+  string amount = 1;
+  google.type.Date current_date = 2;
+}
