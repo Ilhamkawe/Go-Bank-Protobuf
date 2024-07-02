@@ -9,6 +9,6 @@ message CurrentBalanceRequest {
 }
 
 message CurrentBalanceResponnse {
-  string amount = 1;
+  double amount = 1;
   google.type.Date current_date = 2;
 }
