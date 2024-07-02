@@ -18,7 +18,6 @@ protoc-go:
 	protoc --go_opt=module=${GO_MODULE} --go_out=. \
 	--go-grpc_opt=module=${GO_MODULE} --go-grpc_out=. \
 	./proto/bank/*.proto ./proto/bank/type/*.proto \
-	./proto/google/type/*.proto \
 .PHONY: build
 build: clean protoc-go
 
