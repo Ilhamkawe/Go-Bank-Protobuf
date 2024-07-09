@@ -7,5 +7,5 @@ import "proto/bank/type/exchange.proto";
 
 service BankService {
   rpc GetCurrentBalance(CurrentBalanceRequest) returns (CurrentBalanceResponnse) {}
-  rpc FetchEcnhangeRates(ExchangeRateRequest) returns (stream ExchangeRateResponse) {}
+  rpc FetchExchangeRates(ExchangeRateRequest) returns (stream ExchangeRateResponse) {}
 }
