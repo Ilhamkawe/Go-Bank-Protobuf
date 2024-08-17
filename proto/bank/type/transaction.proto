@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package bank;
+
+option go_package = "github.com/Ilhamkawe/Go-Bank-Protobuf/protogen/go/bank";
+import "proto/google/type/datetime.proto";
+import "proto/google/type/date.proto";
+
+enum TransactionType {
+  TRANSACTION_TYPE_UNSPECIFIED = 0;
+  TRANSACTION_TYPE_IN = 1;
+  TRANSACTION_TYPE_OUT = 2;
+}
+
+message Transaction {
+  string account_number = 1;
+  TransactionType type = 2;
+  double amount = 3;
+  google.type.DateTime timestamp = 4;
+  string notes = 16;
+}
+
+message TransactionSummary {
+  string account_number = 1;
+  string sum_amount_in = 2;
+  string sum_amount_out = 3;
+  string sum_total = 4;
+  google.type.Date transaction_date = 16;
+}
