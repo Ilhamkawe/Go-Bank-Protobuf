@@ -22,8 +22,8 @@ message Transaction {
 
 message TransactionSummary {
   string account_number = 1;
-  string sum_amount_in = 2;
-  string sum_amount_out = 3;
-  string sum_total = 4;
+  double sum_amount_in = 2;
+  double sum_amount_out = 3;
+  double sum_total = 4;
   google.type.Date transaction_date = 16;
 }
